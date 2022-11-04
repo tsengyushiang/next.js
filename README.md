@@ -1,6 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# CI deploy Github Page Setup
+
+- Set Personal Access Token to repo secret named `PAT`.
+
+    * right top icon > settings >  Developer settings > Personal access tokens (classic)
+        - check repo
+        - check workflow
+        - copy token string
+
+    * repo > settings > Secrets > Actions > New repository secret
+    
+        - named `PAT`
+        - paste token string
 
 ## Getting Started
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
