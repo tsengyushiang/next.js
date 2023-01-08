@@ -1,17 +1,16 @@
 
-# CI deploy Github Page Setup
+## Github Page CI/CD Setup
 
-- Set Personal Access Token to repo secret named `PAT`.
+1. Create PAT at [Personal access tokens (classic) page](https://github.com/settings/tokens)
+     - Check `repo`, `workflow` and copy token.
 
-    * right top icon > settings >  Developer settings > Personal access tokens (classic)
-        - check repo
-        - check workflow
-        - copy token string
+2. Add PAT at `Repo > settings > Secrets > Actions > New repository secret`
+      - Named `PAT` and paste token from step1.
+      - If you can't find the setting page, try https://github.com/${username}/${reponame}/settings/secrets/actions.
 
-    * repo > settings > Secrets > Actions > New repository secret
-    
-        - named `PAT`
-        - paste token string
+3. Finally, push your code to branch `preparing-ghpage`.
+
+4. Github page only support static web-page, server-side function will not work properly.
 
 ## Getting Started
 
