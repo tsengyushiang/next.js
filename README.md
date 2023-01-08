@@ -10,7 +10,7 @@
 
 3. Finally, push your code to branch `preparing-ghpage`.
 
-4. Github page only support static web-page, server-side function will not work properly.
+4. Github page only support static page, server-side function will not work properly, such as [next-i18n](https://github.com/tsengyushiang/next.js/pull/4#issue-1524353939).
 
 ## Getting Started
 
