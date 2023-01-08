@@ -5,15 +5,16 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-const githubPagesConfig = (github_repo_name) => {
-  console.log(github_repo_name)
-  if (process.env.NODE_ENV == 'production') {
+const githubPagesConfig = (githubConfig) => {
+  if (githubConfig) {
+    console.log(`Build with process.env.NEXT_PUBLIC_REPO=${githubConfig}.`)
+    const repoName = githubConfig.split('/')[1]
     return {
-      assetPrefix: `/${github_repo_name}`,
-      basePath: `/${github_repo_name}`,
+      assetPrefix: `/${repoName}`,
+      basePath: `/${repoName}`,
       images: {
         loader: "akamai",
-        path: `/${github_repo_name}`
+        path: `/${repoName}`
       }
     }
   }
@@ -22,5 +23,5 @@ const githubPagesConfig = (github_repo_name) => {
 
 module.exports = {
   ...nextConfig,
-  ...githubPagesConfig(`${process.env.NEXT_PUBLIC_REPO}`.split('/')[1])
+  ...githubPagesConfig(process.env.NEXT_PUBLIC_REPO)
 }

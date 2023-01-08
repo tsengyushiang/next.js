@@ -1,8 +1,8 @@
-name: AutoDeployGihubPage
+name: ghpage
 
 on:
   push:
-    branches: [ preparing-githubpage ]
+    branches: [ preparing-ghpage ]
 
 jobs:
   build:

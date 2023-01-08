@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useSelector, useDispatch } from "react-redux"
-import { demo } from "../redux/actions/demo"
+import { demo } from "../../redux/actions/demo"
 
 const TextInput = () => {
     const [text, setText] = useState("")
