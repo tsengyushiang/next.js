@@ -12,6 +12,16 @@
 
 4. Github page only support static page, server-side function will not work properly, such as [next-i18n](https://github.com/tsengyushiang/next.js/pull/4#issue-1524353939).
 
+## Verce; CI/CD Setup
+
+1. Create token at [Vercel Perconal Account Setting page](https://vercel.com/account/tokens)
+
+2. Add PAT at `Repo > settings > Secrets > Actions > New repository secret`
+      - Named `VERCEL_TOEKN` and paste token from step1.
+      - If you can't find the setting page, try https://github.com/${username}/${reponame}/settings/secrets/actions.
+
+3. Finally, push your code to branch `preparing-vercel`.
+
 ## Getting Started
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
