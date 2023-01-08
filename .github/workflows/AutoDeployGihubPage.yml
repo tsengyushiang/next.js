@@ -2,7 +2,7 @@ name: AutoDeployGihubPage
 
 on:
   push:
-    branches: [ workflows/AutoDeployGihubPage ]
+    branches: [ preparing-githubpage ]
 
 jobs:
   build:
